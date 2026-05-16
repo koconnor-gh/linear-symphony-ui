@@ -6,6 +6,8 @@
   ]
 
   const phases = ['Poll Linear', 'Prepare workspace', 'Run agent', 'Collect output']
+
+  import RunsView from './lib/RunsView.svelte';
 </script>
 
 <main class="min-h-screen bg-[#f7f4ec] px-6 py-8 text-stone-950">
@@ -73,5 +75,7 @@
         </div>
       </article>
     </section>
+
+    <RunsView />
   </section>
 </main>
