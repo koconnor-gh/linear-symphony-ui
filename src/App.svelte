@@ -35,7 +35,6 @@
 </script>
 
 <div class="flex min-h-screen flex-col bg-[#f7f4ec] text-stone-950 md:flex-row">
-  <!-- Navigation -->
   <nav class="flex-shrink-0 bg-stone-950 text-stone-400 md:w-64 md:border-r md:border-stone-800">
     <div class="p-6">
       <h1 class="text-xl font-bold tracking-tight text-[#fffaf0]">Linear Symphony</h1>
@@ -54,7 +53,6 @@
     </ul>
   </nav>
 
-  <!-- Main Content -->
   <main class="flex-1 overflow-auto">
     <div class="mx-auto max-w-6xl p-6 md:p-8">
       {#if currentRoute === 'dashboard'}
