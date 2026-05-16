@@ -3,7 +3,7 @@
   import Dashboard from './lib/Dashboard.svelte';
   import Runs from './lib/RunsView.svelte';
   import Config from './lib/Config.svelte';
-  import Logs from './lib/Logs.svelte';
+  import Logs from './lib/LogsView.svelte';
 
   let currentRoute = $state('dashboard');
 
