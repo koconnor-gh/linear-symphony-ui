@@ -1,4 +1,6 @@
 <script lang="ts">
+  import WorkflowConfig from './lib/WorkflowConfig.svelte';
+
   const metrics = [
     { label: 'Active runs', value: '0', tone: 'bg-emerald-100 text-emerald-900' },
     { label: 'Retry queue', value: '0', tone: 'bg-amber-100 text-amber-900' },
@@ -44,24 +46,11 @@
 
     <section class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
       <article class="rounded-[2rem] border border-stone-300/80 bg-white/80 p-6 shadow-sm">
-        <h2 class="text-2xl font-black tracking-tight">Configuration Surface</h2>
-        <p class="mt-3 text-stone-600">
-          This starter repo is intentionally thin. Jules stories will add editable config panels,
-          validation states, and safe apply/reload flows.
-        </p>
-        <div class="mt-6 space-y-3">
-          <div class="rounded-2xl bg-stone-100 p-4">
-            <p class="text-xs uppercase tracking-[0.2em] text-stone-500">Workflow</p>
-            <p class="mt-1 font-mono text-sm">WORKFLOW.md</p>
-          </div>
-          <div class="rounded-2xl bg-stone-100 p-4">
-            <p class="text-xs uppercase tracking-[0.2em] text-stone-500">Agent Provider</p>
-            <p class="mt-1 font-mono text-sm">codex | jules | claude | gemini | local</p>
-          </div>
-        </div>
+        <h2 class="text-2xl font-black tracking-tight mb-6">Workflow Configuration</h2>
+        <WorkflowConfig />
       </article>
 
-      <article class="rounded-[2rem] border border-stone-300/80 bg-stone-950 p-6 text-white shadow-sm">
+      <article class="rounded-[2rem] border border-stone-300/80 bg-stone-950 p-6 text-white shadow-sm h-fit">
         <h2 class="text-2xl font-black tracking-tight">Runtime Flow</h2>
         <div class="mt-6 grid gap-3 sm:grid-cols-2">
           {#each phases as phase, index}
