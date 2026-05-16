@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import Dashboard from './lib/Dashboard.svelte';
-  import Runs from './lib/Runs.svelte';
+  import Runs from './lib/RunsView.svelte';
   import Config from './lib/Config.svelte';
   import Logs from './lib/Logs.svelte';
 
