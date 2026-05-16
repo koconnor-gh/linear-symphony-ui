@@ -1,4 +1,6 @@
 <script lang="ts">
+  import LogsView from './lib/LogsView.svelte'
+
   const metrics = [
     { label: 'Active runs', value: '0', tone: 'bg-emerald-100 text-emerald-900' },
     { label: 'Retry queue', value: '0', tone: 'bg-amber-100 text-amber-900' },
@@ -73,5 +75,7 @@
         </div>
       </article>
     </section>
+
+    <LogsView />
   </section>
 </main>
